@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEPGO Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <!--Section Aside-->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <!-- <img src="images/logo.png"> -->
+                    <h2>LEP<span class="danger">GO</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="#">
+                    <i class="fa-brands fa-windows"></i>
+                    <h4>Dashboard</h4>
+                </a>
+                <a href="#" class="active">
+                    <i class="fa-solid fa-user"></i>
+                    <h4>Customers</h4>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-folder"></i>
+                    <h4>Orders</h4>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h4>Analytics</h4>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-message"></i>
+                    <h4>Message</h4>
+                    <span class="message_count">26</span>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-product-hunt"></i>
+                    <h4>Products</h4>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <h4>Reports</h4>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <h4>Settings</h4>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-plus"></i>
+                    <h4>Add Product</h4>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <h4>Log Out</h4>
+                </a>
+            </div>
+        </aside>
+        <!--Section Aside-->
+
+
+        <!--Main-->
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <!--div Insights-->
+            <div class="insights">
+                <!--sales-->
+                <div class="sales">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Totla Sales</h3>
+                            <h1>25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar">
+                                <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+                            </div>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours </small>
+                </div>
+                <!--sales-->
+
+                <!--Express-->
+                <div class="expens">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Totla Expens</h3>
+                            <h1>15,024</h1>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar">
+                                <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+                            </div>
+                            <div class="number">
+                                <p>51%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours </small>
+                </div>
+                <!--Express-->
+
+                <!--income-->
+                <div class="income">
+                    <i class="fa-brands fa-square-font-awesome"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Totla income</h3>
+                            <h1>14,004</h1>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar">
+                                <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+                            </div>
+                            <div class="number">
+                                <p>63%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours </small>
+                </div>
+                <!--income-->
+            </div>
+            <!--Div Insights-->
+
+
+            <div class="recent_orders">
+                <h2>Orders & Categories</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Number</th>
+                            <th>Product Name</th>
+                            <th>Product Photo</th>
+                            <th>Product  Status</th>
+                            <th>Control Of Products</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Foldable Mini Drone</td>
+                            <td><img src="images/profile-1.jpg"></td>
+                            <td class="warning">Pendig</td>
+                            <td>
+                                <button>عرض</button>
+                                <button>تحديث</button>
+                                <button>اظهار</button>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Foldable Mini Drone</td>
+                            <td><img src="images/profile-1.jpg"></td>
+                            <td class="warning">Pendig</td>
+                            <td>
+                                <button>عرض</button>
+                                <button>تحديث</button>
+                                <button>اظهار</button>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Foldable Mini Drone</td>
+                            <td><img src="images/profile-1.jpg"></td>
+                            <td class="warning">Pendig</td>
+                            <td>
+                                <button>عرض</button>
+                                <button>تحديث</button>
+                                <button>اظهار</button>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Foldable Mini Drone</td>
+                            <td><img src="images/profile-1.jpg"></td>
+                            <td class="warning">Pendig</td>
+                            <td>
+                                <button>عرض</button>
+                                <button>تحديث</button>
+                                <button>اظهار</button>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Foldable Mini Drone</td>
+                            <td><img src="images/profile-1.jpg"></td>
+                            <td class="warning">Pendig</td>
+                            <td>
+                                <button>عرض</button>
+                                <button>تحديث</button>
+                                <button>اظهار</button>
+                                <button>حذف</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </main>
+        <!--Main-->
+
+        <!--Start Right Div-->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <!--Theme-->
+                <div class="theme-toggler">
+                    <i class="fa-solid fa-sun active"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <!--Theme-->
+
+                <!--Div Profile-->
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey,<b>Sayed</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg" alt="">
+                    </div>
+                </div>
+                <!--Div Profile-->
+            </div>
+        </div>
+        <!--Start Right Div-->
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
