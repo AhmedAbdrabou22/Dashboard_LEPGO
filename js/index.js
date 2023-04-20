@@ -24,3 +24,13 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+var tablinksAll = document.querySelectorAll('.taplinks');
+tablinksAll.forEach((taplink)=>{
+    taplink.addEventListener("click",()=>{
+        tablinksAll.forEach((tablink)=>{
+            tablink.classList.remove("active2");
+        })
+        taplink.classList.add("active2");
+    })
+})

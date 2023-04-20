@@ -30,31 +30,23 @@
                 </div>
             </div>
             <div class="sidebar">
-                <a href="#">
-                    <i class="fa-brands fa-windows"></i>
-                    <h4>Dashboard</h4>
-                </a>
                 <a href="#" class="active2 taplinks" onclick="openCity(event, 'London')">
                     <i class="fa-solid fa-user"></i>
                     <h4>Products</h4>
                 </a>
-                <a href="#" class="taplinks" onclick="openCity(event, 'Paris')">
-                    <i class="fa-solid fa-folder"></i>
-                    <h4>Categories</h4>
-                </a>
-                <a href="#">
+                <a href="#" class="taplinks">
                     <i class="fa-solid fa-chart-simple"></i>
                     <h4>Users</h4>
                 </a>
-                <a href="#">
+                <!-- <a href="#" class="taplinks">
                     <i class="fa-solid fa-gear"></i>
                     <h4>Settings</h4>
-                </a>
-                <a href="#">
+                </a> -->
+                <a href="#" class="taplinks" onclick="openCity(event, 'Paris')">
                     <i class="fa-solid fa-plus"></i>
                     <h4>Add Categories</h4>
                 </a>
-                <a href="#">
+                <a href="#" class="taplinks">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     <h4>Log Out</h4>
                 </a>
@@ -224,7 +216,33 @@
 
 
             <div id="Paris" class="tabcontent">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quasi.
+                <div class="forms">
+                    <h2>Add New Category</h2>
+                    <form action="">
+                        <div class="namesOfCategory">
+                            <div>
+                                <label for="nameCaegory">Name : </label>
+                                <br>
+                                <input type="text" name="nameCaegory" id="nameCaegory">
+                            </div>
+                            <div>
+                                <label for="typeCategory">type : </label>
+                                <br>
+                                <select name="typeCategory" id="typeCategory">
+                                    <option value="cars">Cars</option>
+                                    <option value="bikes">Bikes</option>
+                                    <option value="Beach">Beach</option>
+                                    <option value="other">other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="description">Description : </label>
+                                <br>
+                                <textarea name="description" id="description" cols="100" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
 
 
