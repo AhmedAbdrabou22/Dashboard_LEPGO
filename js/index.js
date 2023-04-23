@@ -9,7 +9,7 @@ closet.addEventListener('click', () => {
 })
 
 
-function openCity(evt, cityName) {
+function openCity(evt, branchName) {
     console.log(evt);
     var i
     var tabcontent = document.getElementsByClassName("tabcontent");
@@ -20,7 +20,7 @@ function openCity(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace("active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(branchName).style.display = "block";
     evt.currentTarget.className += "active";
 }
 
@@ -53,3 +53,11 @@ input.addEventListener("change", function () {
     };
     reader.readAsDataURL(file);
 });
+
+
+
+
+const themetoggler = document.querySelector(".theme-toggler");
+themetoggler.addEventListener("click",()=>{
+    document.body.classList.toggle('dark-theme-variables')
+})
