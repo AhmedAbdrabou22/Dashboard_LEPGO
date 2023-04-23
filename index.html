@@ -38,17 +38,9 @@
                     <i class="fa-solid fa-chart-simple"></i>
                     <h4>Users</h4>
                 </a>
-                <!-- <a href="#" class="taplinks">
-                    <i class="fa-solid fa-gear"></i>
-                    <h4>Settings</h4>
-                </a> -->
                 <a href="#" class="taplinks" onclick="openCity(event, 'Paris')">
                     <i class="fa-solid fa-plus"></i>
                     <h4>Add Categories</h4>
-                </a>
-                <a href="#" class="taplinks">
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                    <h4>Log Out</h4>
                 </a>
             </div>
         </aside>
@@ -242,10 +234,9 @@
                             </div>
                             <!--Choose Image of Category-->
                             <div class="image-input">
-                                <input type="file" accept="image/*" id="imageInput">
-                                <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
-                                <img src="" class="image-preview">
-                                <span class="change-image">Choose different image</span>
+                                <label for="input-file" id="input-file-label">Choose a file</label>
+                                <input type="file" id="input-file"/>
+                                <img id="image"/>
                             </div>
                             <!--Choose Image of Category-->
                         </div>

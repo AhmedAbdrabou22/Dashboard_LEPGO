@@ -25,11 +25,31 @@ function openCity(evt, cityName) {
 }
 
 var tablinksAll = document.querySelectorAll('.taplinks');
-tablinksAll.forEach((taplink)=>{
-    taplink.addEventListener("click",()=>{
-        tablinksAll.forEach((tablink)=>{
+tablinksAll.forEach((taplink) => {
+    taplink.addEventListener("click", () => {
+        tablinksAll.forEach((tablink) => {
             tablink.classList.remove("active2");
         })
         taplink.classList.add("active2");
     })
 })
+
+
+const input = document.getElementById("input-file");
+const image = document.getElementById("image");
+
+// Add an event listener to the input element
+input.addEventListener("change", function () {
+    // Get the selected file
+    const file = input.files[0];
+
+    // Create a FileReader object
+    const reader = new FileReader();
+
+    // Set the onload function of the reader object
+    reader.onload = function (e) {
+        // Set the source of the image element to the contents of the file
+        image.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+});
