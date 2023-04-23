@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="sidebar">
-                <a href="#" class="active2 taplinks" onclick="openCity(event, 'London')">
+                <a href="#" class="taplinks" onclick="openCity(event, 'London')">
                     <i class="fa-solid fa-user"></i>
                     <h4>Products</h4>
                 </a>
@@ -240,6 +240,14 @@
                                 <br>
                                 <textarea name="description" id="description" cols="100" rows="3"></textarea>
                             </div>
+                            <!--Choose Image of Category-->
+                            <div class="image-input">
+                                <input type="file" accept="image/*" id="imageInput">
+                                <label for="imageInput" class="image-button"><i class="far fa-image"></i> Choose image</label>
+                                <img src="" class="image-preview">
+                                <span class="change-image">Choose different image</span>
+                            </div>
+                            <!--Choose Image of Category-->
                         </div>
                     </form>
                 </div>

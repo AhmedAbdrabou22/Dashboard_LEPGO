@@ -458,6 +458,9 @@ main .recent_orders table tbody td button:nth-child(4){
 
 
 /**Design Form */
+/* .forms{
+    display: none;
+} */
 .forms h2{
     margin-top: 1rem;
 }
@@ -487,6 +490,7 @@ main .recent_orders table tbody td button:nth-child(4){
 textarea{
     width: 100%;
 }
+
 /**Design Form */
 
 
@@ -623,4 +627,8 @@ textarea{
         font-size: 25px;
         margin-top:0.8rem
     }
+}
+
+.tabcontent {
+    display: none;
 }
