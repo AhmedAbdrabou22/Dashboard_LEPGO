@@ -681,7 +681,7 @@ textarea {
         top: 0;
         text-align: center;
         height: 4.6rem;
-        background-color: white;
+        background-color: var(--color-white);
         width: 100%;
         z-index: 2;
         margin: 0;
