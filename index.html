@@ -30,15 +30,15 @@
                 </div>
             </div>
             <div class="sidebar">
-                <a href="#" class="taplinks" onclick="openCity(event, 'London')">
+                <a href="#" class="taplinks" onclick="openCity(event, 'Products')">
                     <i class="fa-solid fa-user"></i>
                     <h4>Products</h4>
                 </a>
-                <a href="#" class="taplinks">
+                <a href="#" class="taplinks" onclick="openCity(event, 'Users')">
                     <i class="fa-solid fa-chart-simple"></i>
                     <h4>Users</h4>
                 </a>
-                <a href="#" class="taplinks" onclick="openCity(event, 'Paris')">
+                <a href="#" class="taplinks" onclick="openCity(event, 'Category')">
                     <i class="fa-solid fa-plus"></i>
                     <h4>Add Categories</h4>
                 </a>
@@ -56,7 +56,7 @@
             </div>
 
 
-            <div id="London" class="tabcontent">
+            <div id="Products" class="tabcontent">
                 <!--div Insights-->
                 <div class="insights">
                     <!--sales-->
@@ -207,7 +207,7 @@
             </div>
 
 
-            <div id="Paris" class="tabcontent">
+            <div id="Category" class="tabcontent">
                 <div class="forms">
                     <h2>Add New Category</h2>
                     <form action="">
@@ -235,12 +235,67 @@
                             <!--Choose Image of Category-->
                             <div class="image-input">
                                 <label for="input-file" id="input-file-label">Choose a file</label>
-                                <input type="file" id="input-file"/>
-                                <img id="image"/>
+                                <input type="file" id="input-file" />
+                                <img id="image" />
                             </div>
                             <!--Choose Image of Category-->
                         </div>
                     </form>
+                </div>
+            </div>
+
+            <div id="Users" class="tabcontent">
+                <div class="identitydash">
+                    <h2>Welcome</h2>
+                    <p>Dashboard</p>
+                </div>
+                <div class="users_details">
+                    <div class="insights">
+                        <!--sales-->
+                        <div class="sales earned">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <div class="middle">
+                                <div class="left">
+                                    <h3>The profit</h3>
+                                    <h1>25,024</h1>
+                                </div>
+                                <div class="progress">
+                                    <i class="fa-solid fa-dollar-sign"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--sales-->
+
+                        <!--Express-->
+                        <div class="expens all_sales">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <div class="middle">
+                                <div class="left">
+                                    <h3>The Sales</h3>
+                                    <h1>15,024</h1>
+                                </div>
+                                <div class="progress">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Express-->
+
+                        <!--income-->
+                        <div class="income users">
+                            <i class="fa-brands fa-square-font-awesome"></i>
+                            <div class="middle">
+                                <div class="left">
+                                    <h3>The Users</h3>
+                                    <h1>14,004</h1>
+                                </div>
+                                <div class="progress">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--income-->
+                    </div>
                 </div>
             </div>
 

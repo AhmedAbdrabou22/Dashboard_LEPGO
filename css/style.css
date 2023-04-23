@@ -276,7 +276,18 @@ main .insights>div i {
     font-size: 2rem;
     color: white;
 }
-
+main .insights>div .progress i{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 main .insights>div.expens i {
     background: var(--color-danger);
 }
@@ -651,3 +662,18 @@ textarea{
   #input-file-label:hover {
     opacity:0.9;
   }
+
+
+
+  /**Style Users */
+  .identitydash{
+    margin-top: 1.2rem;
+    background-color: white;
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-1);
+    -webkit-border-radius: var(--border-radius-1);
+    -moz-border-radius: var(--border-radius-1);
+    -ms-border-radius: var(--border-radius-1);
+    -o-border-radius: var(--border-radius-1);
+}
+  /**Style Users */
